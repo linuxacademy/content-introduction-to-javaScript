@@ -1,31 +1,63 @@
 <html>
     <title>Page Title goes here</title>
     <head>
-        <div style="text-align:center;">
-        <h3>This is in the header</h3>
-        </div>
+        <style>
+            body {
+              font-family: "Arial", sans-serif;
+            }
+            
+            .menu {
+              height: 100%;
+              width: 13em;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: rgb(114, 174, 223);
+              overflow-x: hidden;
+              padding-top: 1.25em;
+            }
+            
+            .menu a {
+              padding: .37em .5em .37em 1em;
+              text-decoration: none;
+              font-size: 1.5em;
+              color: #0a1b47;
+              display: block;
+            }
+            
+            .menu a:hover {
+              color: #1da829;
+            }
+            
+            .content {
+              margin-left: 13em; 
+              font-size: 1.75em; 
+              padding: 0em .625em;
+            }
+            
+            </style>
     </head>
     <body>
-        <div style="text-align:center;">
-        <p>This is some text!</p>
+        <div class="menu">
+            <a href="#">Products</a>
+            <a href="#">About US</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact</a>
+          </div>
+        <div class="content" style="text-align:center;">
+        <h3>This is place holder text!</h3>
+        <p>------------------------------------------</p>
+        <br>
+        <p>Montes tempor bibendum etiam hendrerit tristique natoque maecenas mus orci velit dictum sodales. 
+            Maecenas facilisi aenean litora? Habitasse nisl mi, in quam inceptos penatibus semper feugiat. 
+            Ridiculus vitae urna aliquet eu et dui rhoncus habitasse duis ipsum.</p>
+            <p>Eleifend pellentesque turpis a vestibulum iaculis a mauris suspendisse tortor rhoncus. 
+            Himenaeos dui fermentum nisi vehicula tempor adipiscing elit! Ridiculus felis eget odio fusce rhoncus phasellus felis. 
+            Dignissim imperdiet iaculis natoque vehicula hac augue diam quisque integer sociis integer quisque. 
+            Turpis in varius diam neque dignissim lobortis penatibus tortor. Porttitor tellus sit commodo. 
+            Maecenas ante cras mollis montes nam proin nisi semper. Vestibulum.</p>
+
         </div>
     </body>
-    <div >
-        <button type="button" style="display: block;"
-        onclick="document.body.style.backgroundColor =  'yellow';">
-        make me yellow
-        </button>
-        <button type="button" style="display: block;"
-        onclick="document.body.style.backgroundColor =  'blue';">
-        make me blue   
-        </button>
-        <button type="button" style="display: block;"
-        onclick="document.body.style.backgroundColor =  'green';">
-        make me green  
-        </button>
-        <button type="button" style="display: block;"
-        onclick="document.body.style.backgroundColor =  'purple';">
-        make me purple
-        </button>
-    </div>
 </html>
